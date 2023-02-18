@@ -1,8 +1,13 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+/* more headers goese here*/
+
+/*betty style doc for a function main goes here*/
+
 /**
- * main - A C program that indentifies whether the number is positive, negative, or equal to zero
+ * main - Entry
+ *
  * Return: 0 (Success)
  */
 int main(void)
@@ -13,11 +18,11 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("is positive\n");
+		printf("%d is positive\n", n);
 	} else if (n == 0)
 	{
-		printf("is zero\n");
+		printf("%d is zero\n", n);
 	} else
-		printf("is negative\n");
+		printf("%d is negative\n", n);
 	return (0);
 }
