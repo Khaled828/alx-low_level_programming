@@ -1,10 +1,21 @@
-#include "holberton.h"
+#include "main.h"
+/**
+ * print_rev - reverse something
+ * @s: params
+ */
 
-int main(void)
+void print_rev(char *s)
 {
-	char *str;
+	int i = 0;
+	int j;
 
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-	print_rev(str);
-	return (0);
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	for (j = i - 1; j >= 0; j--)
+	{
+		_putchar(s[j]);
+	}
+	_putchar('\n');
 }
